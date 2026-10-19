@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>CAT SKB Jaksa Ahli Pertama — Gratis 100 Soal</title>
+<title>CAT SKB 100 Soal by Fath Gantenk</title>
 <style>
 
 :root{--ink:#192b43;--muted:#64748b;--deep:#142a43;--teal:#047e84;--teal-light:#e6f6f4;--gold:#dfab55;--light:#f4f7f9;--line:#dfe7ed;--white:#fff;--wrong:#b53d47;--good:#16805e;--shadow:0 16px 40px rgba(28,52,75,.08)}
@@ -26,15 +26,15 @@
 <header class="masthead"><div class="wrap mast-inner"><div class="brand"><div class="logo" aria-hidden="true">⚖</div><div><strong>CAT • JAKSA AHLI PERTAMA</strong><span>CAT GRATIS · 100 Soal · 36 Indikator</span></div></div><div class="headright"><span class="net-pill">● Simulasi CAT Gratis</span><span class="subtle-head">100 soal · 36 indikator · A–E</span></div></div></header>
 <main class="wrap main">
 <section class="v2box" id="v2dash" hidden>
-<div class="eyebrow" style="color:#08777b">CAT SKB JAKSA · VERSI GRATIS 100%</div>
-<h2 style="margin:9px 0 4px;font-size:23px">Bank soal latihan SKB Jaksa</h2>
+<div class="eyebrow" style="color:#08777b">CAT SKB by Fathrker</div>
+<h2 style="margin:9px 0 4px;font-size:23px">Bank soal latihan SKB </h2>
 <p class="v2state" id="v2status">Mempersiapkan bank soal gratis…</p>
 <div class="v2grid">
  <div><label class="label" for="v2set">Pilih paket soal</label><select id="v2set" class="field"></select></div>
  <div><label class="label">Cek pembaruan manual</label><div class="v2btnrow"><button class="btn" type="button" id="v2refresh">⟳ Muat ulang bank soal</button></div></div>
 </div>
-<div class="v2warn">Tidak memerlukan API key atau langganan AI. Soal baru hanya tersedia jika pengelola menambahkan paket secara manual. Semua soal dan kunci pada website statis dapat dilihat melalui berkas sumber; ini cocok untuk latihan, bukan ujian dengan keamanan CAT resmi.</div>
-<div id="v2log" class="v2log">Bank soal awal tersedia. Tidak ada pembuatan soal otomatis.</div></section><section id="intro" class="welcome">
+<div class="v2warn">Tim terbaik di dunia ini adalah BARCELONE</div>
+<div id="v2log" class="v2log">Messi is GOAT.</div></section><section id="intro" class="welcome">
   <div class="hero"><div class="hero-content"><div class="eyebrow">SIMULASI UJIAN BERBASIS KOMPUTER</div><h1>Siap hadapi<br><em>SKB Jaksa?</em></h1><p>Kerjakan 100 soal pilihan ganda dengan suasana ujian CAT: waktu berjalan, pilih jawaban, tandai ragu-ragu, dan lihat analisis nilai setelah selesai.</p><div class="hero-features"><span class="pill">◷ Waktu otomatis</span><span class="pill">▦ Navigasi 100 soal</span><span class="pill">✓ Nilai & pembahasan</span><span class="pill">⌕ 36 indikator materi</span></div><div class="hero-footer">Paket awal sudah tersedia. Untuk latihan tambahan, pengelola dapat mengunggah bank soal manual tanpa biaya AI. Bukan sistem resmi BKN.</div></div></div>
   <div class="settings paper"><div class="eyebrow" style="color:#07757b">PENGATURAN SESI</div><h2>Mulai simulasi</h2><p>Semua pertanyaan diujikan dengan pilihan A, B, C, D, E. Kunci tidak ditampilkan sampai sesi diakhiri.</p><label class="label" for="candidateName">Nama peserta (opsional)</label><input class="field" id="candidateName" placeholder="Contoh: Peserta SKB Jaksa" autocomplete="name" maxlength="70"><label class="label" for="duration">Durasi simulasi</label><select id="duration" class="field"><option value="60">60 menit — latihan cepat</option><option value="90">90 menit</option><option value="100">100 menit</option><option value="120" selected>120 menit — latihan penuh</option><option value="150">150 menit — pendalaman</option></select><div class="setting-box"><div class="setting-row"><span>Jumlah pertanyaan</span><b>100 soal</b></div><div class="setting-row"><span>Kemampuan khusus</span><b>82 soal</b></div><div class="setting-row"><span>Pengetahuan umum</span><b>18 soal</b></div><div class="setting-row"><span>Penilaian</span><b>Benar +1 / lainnya 0</b></div></div><button type="button" class="btn btn-primary btn-full" id="startBtn">Mulai Ujian →</button><div class="note">Durasi dan skoring adalah pengaturan latihan, bukan ketentuan resmi ujian. Sesi tersimpan otomatis pada browser ini selama penyimpanan lokal tersedia.</div><div class="resume-box" id="resumeBox"><b id="resumeTitle">Sesi yang tersimpan</b><p id="resumeText"></p><button class="btn btn-dark" id="resumeBtn" type="button">Lanjutkan sesi</button><button class="btn btn-plain" id="discardBtn" type="button">Hapus sesi tersimpan</button></div></div>
 </section>
@@ -45,7 +45,7 @@
 <section id="results" hidden>
  <div class="paper result-hero"><div><div class="eyebrow" style="color:#077f82">HASIL SIMULASI CAT</div><h1 id="resultTitle">Ujian selesai</h1><p id="resultSubtitle">Hasil penilaian dan pembahasan</p><p id="finishedAt" style="margin-top:10px;font-size:12px"></p></div><div class="score-box"><b id="scoreValue">0</b><small>SKOR / 100</small></div></div><div class="stats"><div class="stat"><strong id="correctCount">0</strong><span>Jawaban benar</span></div><div class="stat"><strong id="wrongCount">0</strong><span>Jawaban salah</span></div><div class="stat"><strong id="blankCount">0</strong><span>Belum dijawab</span></div><div class="stat"><strong id="flagCount">0</strong><span>Ditandai ragu</span></div><div class="stat"><strong id="accuracyValue">0%</strong><span>Akurasi dari terjawab</span></div></div><div class="section-breakdown" id="sectionBreakdown"></div><div class="result-actions"><button class="btn btn-dark" type="button" id="printBtn">⎙ Cetak / simpan PDF</button><button class="btn" type="button" id="csvBtn">↓ Unduh hasil CSV</button><button class="btn btn-primary" type="button" id="newBtn">↻ Simulasi baru</button></div><div class="paper review-panel"><div class="review-top"><h2>Pembahasan 100 Soal</h2><select class="field" style="max-width:260px" id="topicFilter"><option value="all">Semua indikator</option></select></div><div class="filters" id="filters"><button class="filter active" data-filter="all" type="button">Semua</button><button class="filter" data-filter="wrong" type="button">Salah</button><button class="filter" data-filter="blank" type="button">Kosong</button><button class="filter" data-filter="correct" type="button">Benar</button><button class="filter" data-filter="flagged" type="button">Ragu-ragu</button></div><p class="note" id="reviewCount"></p><div id="reviewList"></div><button type="button" class="btn btn-full" id="moreBtn" hidden>Tampilkan 10 soal berikutnya ↓</button></div>
 </section>
-<p class="disclaimer">Simulasi latihan independen · Materi berdasarkan 36 indikator pengumuman Kejaksaan RI tahun 2024 · Bukan ujian CAT resmi atau pengumuman kisi-kisi 2026.</p>
+<p class="disclaimer">Simulasi latihan independen Powered By Peter Fathrker.</p>
 </main>
 <div class="modal-bg" id="finishModal" hidden><div class="modal paper" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><h2 id="modalTitle">Akhiri simulasi?</h2><p id="modalSummary">Pastikan seluruh soal yang ingin dikerjakan telah terisi.</p><div class="hint">Setelah ujian diselesaikan, jawaban tidak dapat diubah. Nilai dan pembahasan langsung ditampilkan.</div><div class="modal-actions"><button type="button" id="cancelFinish" class="btn">Kembali mengerjakan</button><button type="button" id="confirmFinish" class="btn btn-danger">Ya, selesaikan</button></div></div></div>
 <script>
