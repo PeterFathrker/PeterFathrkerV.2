@@ -1,0 +1,23 @@
+MENAMBAHKAN PAKET SOAL BARU TANPA BIAYA
+======================================
+
+Paket baru dibuat dalam file JSON yang strukturnya mengikuti contoh banks/starter-20261019.json.
+Lima pilihan jawaban HARUS selalu urut A, B, C, D, E di array "options".
+Setiap berkas paket wajib memuat tepat 100 soal dengan 36 topik dan 82 Khusus + 18 Umum.
+Setiap item memuat: id (nomor 1 s.d. 100), topic, question, options (5 teks), answer (A-E), explanation, source, section.
+
+LANGKAH
+1. Salin file banks/starter-20261019.json, ganti isi 100 soal dan data id paket, misalnya "latihan-002".
+2. Jangan hanya mengganti urutan soal: jika pilihan jawaban diubah, sesuaikan huruf kunci.
+3. Simpan menjadi banks/latihan-002.json.
+4. Tambahkan catatan berikut di dalam array "sets" pada banks/index.json:
+   {"id":"latihan-002","date":"2026-10-20","origin":"manual","count":100,"label":"Paket 2 · 100 soal"}
+   Pisahkan dengan koma dari entri sebelumnya, pastikan JSON valid.
+5. Ubah field "latest" menjadi "latihan-002" (opsional, untuk pilihan paket baru).
+6. Unggah file JSON dan manifest yang diperbarui ke repository publik GitHub.
+7. Setelah Pages selesai memublikasikan, klik "Muat ulang bank soal" pada website.
+
+CATATAN
+- Mesin CAT menolak paket tidak lengkap, pilihan tidak tepat lima, atau distribusi indikator yang keliru.
+- Itu VALIDASI FORMAT, bukan pemeriksaan akurasi hukum. Periksa soal/kunci/rujukan sebelum diterbitkan.
+- Berkas paket publik termasuk kunci jawaban: cocok untuk latihan, bukan ujian aman.
